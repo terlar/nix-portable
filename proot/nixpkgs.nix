@@ -20,8 +20,8 @@ proot.overrideAttrs (old:{
   src = pkgs.fetchFromGitHub {
     repo = "proot";
     owner = "proot-me";
-    rev = "8c0ccf7db18b5d5ca2f47e1afba7897fb1bb39c0";
-    sha256 = "sha256-vFdUH1WrW6+MfdlW9s+9LOhk2chPxKJUjaFy01+r49Q=";
+    rev = "5f780cba57ce7ce557a389e1572e0d30026fcbca";
+    sha256 = "sha256-BVA7fQOw1PpB/OFtbojJhws+unI3XN69qfB2SBPrA0Y=";
   };
   nativeBuildInputs = with static; old.nativeBuildInputs ++ [
     libarchive.dev pkg-config

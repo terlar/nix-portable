@@ -125,7 +125,7 @@
 
           # the static proot built with nix somehow didn't work on other systems,
           # therefore using the proot static build from proot gitlab
-          proot = if crossSystem != null then throw "fix proot for crossSytem" else import ./proot/github.nix { inherit pkgs; };
+          proot = if crossSystem != null then throw "fix proot for crossSytem" else import ./proot/nixpkgs.nix { inherit pkgs; };
         in
           # crashes if nixpkgs updated: error: executing 'git': No such file or directory
           pkgs.callPackage ./default.nix {
